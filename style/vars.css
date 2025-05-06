@@ -1,0 +1,22 @@
+:root{
+    --custom-black: #030101;
+    --custom-purple: #4c3a61;
+    --custom-blue: #348a9c;
+    --custom-yellow: #eb8526;
+    --custom-green: #44993c;
+    --custom-red: #c21b17;
+    --custom-dark-blue: #10212b;
+    --background-default: #d9d0c6;
+    --secondary-color: #442726;
+}
+
+/* 
+#030101	C
+#4c3a61	U
+#348a9c	L
+#eb8526	T
+#44993c	U
+#c21b17	R   
+#10212b	A
+#10212b	L 
+*/

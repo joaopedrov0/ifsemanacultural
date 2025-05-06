@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat";
+    background-color: var(--background-default);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    width: clamp(300px, 960px, 80%);
+    position: relative;
+    top: 50px;
+}
+
+h1, h2{
+    width: 100%;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2rem;
+}
+
+.material-symbols-outlined{
+    color: var(--secondary-color);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.first-hr{
+    border: 3px solid var(--secondary-color);
+    margin: 0 0 20px 0;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid var(--secondary-color);
+    margin: 5px 0;
+}
+
+.custom-text{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+}
+
+.time, .local{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--custom-dark-blue);
+}
+
+.time span, .local span{
+    text-align: center center;
+    margin-left: 5px;
+}
+
+section{
+    margin: 10px 0;
+}
+
+.event{
+    border-left: 7px solid var(--secondary-color);
+    margin-bottom: 20px;
+    padding: 10px 10px 10px 25px;
+}
+
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 4rem;
+    }
+}
