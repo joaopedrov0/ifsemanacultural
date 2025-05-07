@@ -9,18 +9,25 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="/style/vars.css">
     <link rel="stylesheet" href="/style/font.css">
+    <link rel="stylesheet" href="/style/modal.css">
     <link rel="stylesheet" href="/style/style.css">
 
     <script src="/javascript/customletters.js" defer></script>
+    <script src="/javascript/modal.js" defer></script>
+    <script src="/javascript/share.js" defer></script>
 </head>
 <body>
-    <div class="blocker">
+    <div class="blocker hidden">
         <div class="modal">
-            <h2 class="custom-text">Compartilhe o evento com a comunidade!</h2>
+            <div class="close-btn" onclick="toggleBlocker()"></div>
+            <h3>Compartilhe o evento com a comunidade!</h3>
+            <img src="/img/qrcodesemanacultural.jpg" alt="QR code dessa página">
+            <div class="share-btn">Compartilhe!</div>
         </div>
     </div>
     <div class="container">
         <h1>Semana <span class="custom-text">Cultural</span></h1>
+        <div class="share-btn" onclick="toggleBlocker()">Compartilhe!</div>
         <h2>Agenda</h2>
         <hr class="first-hr">
         <section>

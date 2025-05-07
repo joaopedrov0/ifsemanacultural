@@ -1,0 +1,73 @@
+.blocker{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateY(0%);
+    opacity: 1;
+
+    transition: opacity ease 200ms;
+}
+
+.blocker.hidden{
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.modal{
+    background-color: var(--secondary-color);
+    width: clamp(300px, 960px, 90%);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    gap: 10px;
+    position: absolute;
+}
+
+.modal h3{
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--background-default);
+    text-align: center;
+}
+
+.modal img{
+    width: clamp(300px, 50%, 600px);
+    border-radius: 20px;
+}
+
+.close-btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-family: 'Material Symbols Outlined';
+    font-size: 32px;
+    color: var(--background-default);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.close-btn:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.close-btn::before{
+    content:'close'
+}
+
+.modal .share-btn{
+    font-weight: bold;
+
+    width: clamp(300px, 50%, 600px);
+    color: var(--secondary-color);
+    height: fit-content;
+    background-color: var(--background-default);
+    margin: 0;
+}
